@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-/* font style  */
+/* font style  one*/
 
 .noto-serif {
   font-family: "Noto Serif", serif;
@@ -12,6 +12,16 @@
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
+
+/* font style  tow*/
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* header section  */
 
 .header-container {
   margin: 0 auto;
@@ -27,6 +37,7 @@
 .nav-item li {
   list-style: none;
   margin-right: 50px;
+  font-weight: 300;
 }
 .nav-item li a {
   text-decoration: none;
@@ -37,8 +48,9 @@
   font-weight: bold;
 }
 .image-title {
-  margin-top: 200px;
+  margin-top: 150px;
   justify-content: space-between;
+  align-items: end;
 }
 
 .title-description {
@@ -57,6 +69,7 @@
 /* shared style  */
 .container {
   max-width: 90%;
+  margin: 0 auto;
 }
 
 .display-flex {
@@ -68,6 +81,58 @@
   color: rgba(0, 0, 0, 0.5);
 }
 
+.btn {
+  width: 100%;
+  background-color: #e95a08;
+  color: white;
+
+  border: none;
+  padding: 10px 0;
+}
+
+/* main section start here  */
+.title-card-container {
+  margin-top: 100px;
+}
+
+.our-title-desc {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.card-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* card section style  */
+
+.card-section {
+  display: grid;
+  grid-template-columns: repeat(4, 0fr);
+  gap: 30px;
+  margin: 0 auto;
+  place-content: center;
+}
+
+.card {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.flower-title {
+  font-weight: 500;
+}
+
+.price {
+  font-weight: bold;
+}
+
+/* responsive design start here  */
+
 @media screen and (max-width: 576px) {
   .container {
     max-width: 100%;
@@ -77,6 +142,7 @@
     font-size: 0.8rem;
   }
 
+  /* navbar or header responsive  */
   .nav-item li {
     display: none;
   }
@@ -97,5 +163,16 @@
   }
   .title-description {
     padding: 10px;
+  }
+
+  /* card section  */
+  .title-card-container {
+    margin-top: 50px;
+  }
+
+  .card-section {
+    grid-template-columns: repeat(2, 0fr);
+    row-gap: 40px;
+    column-gap: 10px;
   }
 }
