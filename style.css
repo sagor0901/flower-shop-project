@@ -93,6 +93,7 @@
 /* main section start here  */
 .title-card-container {
   margin-top: 100px;
+  margin-bottom: 200px;
 }
 
 .our-title-desc {
@@ -131,6 +132,47 @@
   font-weight: bold;
 }
 
+.flower-lover-section {
+  margin-top: 120px;
+}
+
+.store-title {
+  position: relative;
+
+  justify-content: center;
+  gap: 20px;
+}
+.store-photo {
+  height: auto;
+}
+.flower-lover-title-desc {
+  width: 30%;
+  margin-top: 50px;
+}
+.flower-lover-title-desc ul li {
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+.flower-lover-title-desc ul {
+  margin-left: 20px;
+}
+.flower-lover-title {
+  font-size: 3rem;
+  margin-top: 20px;
+}
+
+.badge img {
+  width: 280px;
+  height: 280px;
+}
+.badge {
+  position: absolute;
+  /* top: 0%; */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* z-index: 10; */
+}
+
 /* responsive design start here  */
 
 @media screen and (max-width: 576px) {
@@ -166,13 +208,48 @@
   }
 
   /* card section  */
+  .our-title-desc {
+    padding: 5px;
+  }
+
   .title-card-container {
     margin-top: 50px;
+  }
+
+  .card {
+    width: 80%;
+    margin: auto;
   }
 
   .card-section {
     grid-template-columns: repeat(2, 0fr);
     row-gap: 40px;
     column-gap: 10px;
+  }
+
+  /* img and badge section  */
+  .flower-lover-section {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .badge {
+    display: none;
+  }
+
+  .store-title {
+    flex-direction: column;
+  }
+  .store-photo img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .flower-lover-title {
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+  }
+  .flower-lover-title-desc {
+    width: 100%;
   }
 }
