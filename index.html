@@ -12,21 +12,53 @@
     />
     <!-- font style  -->
 
+    <!-- icon cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- icon cdn  -->
+
     <title>flower shop</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="noto-serif">
-    <header>
+    <header class="container header-container">
       <!-- navbar section  -->
-      <nav>
-        <h2>Faugel</h2>
-        <ul>
-          <li><a href="">Home</a></li>
+      <nav class="navbar display-flex">
+        <img src="assets/logo.png" alt="" />
+        <ul class="nav-item display-flex">
+          <li><a class="home" href="">Home</a></li>
           <li><a href="">Shop</a></li>
           <li><a href="">Sbout us</a></li>
+          <span><i class="fa-solid fa-cart-shopping"></i> Cart ($56)</span>
         </ul>
-        <span>Cart ($56)</span>
       </nav>
+
+      <!-- title and banner section  -->
+
+      <section class="image-title display-flex">
+        <div class="title-description">
+          <h2 class="fresh-title">
+            ALWAYS
+            <span class="color-text"
+              >FRESH <br />
+              FLOWERS</span
+            >
+          </h2>
+          <p class="for-all-description description">
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop. From classic roses to exotic blooms, we offer a wide
+            variety of fresh flowers that are perfect for any occasion.
+          </p>
+        </div>
+        <div>
+          <img class="banner-img" src="assets/hero-flower.png" alt="" />
+        </div>
+      </section>
     </header>
     <main></main>
     <footer></footer>
