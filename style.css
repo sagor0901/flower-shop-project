@@ -99,7 +99,7 @@
 /* main section start here  */
 .title-card-container {
   width: 100%;
-  overflow: hidden;
+
   margin-top: 100px;
   margin-bottom: 200px;
 }
@@ -367,6 +367,8 @@
   }
 
   .title-card-container {
+    overflow: hidden;
+    gap: 20px;
     margin-top: 50px;
     margin-bottom: 30px;
   }
