@@ -90,6 +90,13 @@
   padding: 10px 0;
 }
 
+.shop-now-btn {
+  border: none;
+  background: none;
+  color: white;
+  font-weight: 600;
+}
+
 /* main section start here  */
 .title-card-container {
   margin-top: 100px;
@@ -110,14 +117,14 @@
 
 .card-section {
   display: grid;
-  grid-template-columns: repeat(4, 0fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   margin: 0 auto;
   place-content: center;
+  padding: 0 15px;
 }
 
 .card {
-  width: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -167,12 +174,79 @@
 }
 .badge {
   position: absolute;
-  /* top: 0%; */
   left: 50%;
   transform: translate(-50%, -50%);
-  /* z-index: 10; */
 }
 
+/* challagne part  */
+
+.challenge-part {
+  margin-top: 120px;
+}
+
+/* .challenge-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+} */
+
+.box-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+}
+.flower-one {
+  width: 300px;
+  height: 200px;
+  background-image: url(assets/deal-bloom.png);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flower-two {
+  width: 300px;
+  height: 200px;
+  background-image: url(assets/deal-ana.png);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flower-three {
+  width: 80%;
+  height: auto;
+  background-image: url(assets/deal-zabo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.zabo-title {
+  font-size: 2.8rem;
+}
+.zabo-title-link {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+.content-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btn-text {
+  color: white;
+  text-align: center;
+}
 /* responsive design start here  */
 
 @media screen and (max-width: 576px) {
@@ -217,14 +291,12 @@
   }
 
   .card {
-    width: 80%;
-    margin: auto;
+    gap: 0px;
   }
 
   .card-section {
-    grid-template-columns: repeat(2, 0fr);
-    row-gap: 40px;
-    column-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 
   /* img and badge section  */
@@ -251,5 +323,33 @@
   }
   .flower-lover-title-desc {
     width: 100%;
+  }
+
+  .box-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* display: block; */
+  }
+  .content-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .flower-one,
+  .flower-two,
+  .flower-three {
+    width: 90%;
+    background-size: cover;
+  }
+  .flower-three {
+    height: 200px;
+  }
+  .flower-three h2 {
+    font-size: 1.8rem;
   }
 }
